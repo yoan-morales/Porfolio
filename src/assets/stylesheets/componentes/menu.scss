@@ -1,5 +1,10 @@
 .portfolio {
   &Nav {
+    @include size(100%, auto);
+    background-color: $color-transparent;
+    opacity: 70%;
+    position: absolute;
+    z-index: 1;
     &__logo {
       img {
         @include size(100%, 100px);
@@ -9,10 +14,12 @@
 
     &__menu {
       @include align(flex, center, center);
-      @include font($font-family, $color-text, 18px, 400);
       ul {
         li {
           margin: 0 18px;
+          .nav-link {
+            @include font($font-family, $color-text, 18px, 700);
+          }
         }
       }
     }

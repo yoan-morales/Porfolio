@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 //color
 $primary-color: #4955ff;
 $secondary-color: #2F6EF4;
 $color-text: #040434;
-$color-transparent: rbga($secondary-color, 0.1);
+$color-transparent: rbga(236, 240, 241, 1);
 $color-title: #2f3180;
 $background-color: #efefef;
 $background-deg: rgba($primary-color, 0.1);
 
 $font-family:  "Arimo", sans-serif;
-$font-size: 1rem;
+$font-family-secondary: "Sora", sans-serif;
+$font-size: 1.5rem;

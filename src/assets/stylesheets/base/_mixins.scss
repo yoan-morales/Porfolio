@@ -1,0 +1,46 @@
+@mixin font($font-family, $color, $font-size, $font-weight, $font-style) {
+  font-family: $font-family;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin button($background-color, $border-radius, $border, $padding) {
+  background-color: $background-color;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+}
+
+@mixin size($width, $heigth) {
+  width: $width;
+  height: $heigth;
+}
+
+@mixin dimensions(
+  $width,
+  $heigth,
+  $min-width,
+  $max-width,
+  $min-heigth,
+  $max-heigth
+) {
+  @include size($width, $heigth);
+  min-width: $min-width;
+  max-width: $max-width;
+  min-height: $min-heigth;
+  max-height: $max-heigth;
+}
+
+@mixin card($background-color, $position, $display) {
+  background-color: $background-color;
+  position: $position;
+  display: $display;
+}
+
+@mixin align($display, $jusify-content, $align-items) {
+  display: $display;
+  justify-content: $jusify-content;
+  align-items: $align-items;
+}

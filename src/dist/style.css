@@ -13,10 +13,5 @@
 .portfolioNav__menu ul li {
   margin: 0 18px;
 }
-.portfolioNav__icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 /*# sourceMappingURL=style.css.map */

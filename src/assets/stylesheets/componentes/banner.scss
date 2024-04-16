@@ -3,5 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    .carousel-item {
+      img {
+        @include size(100%, 100vh);
+        object-fit: fill;
+      }
+    }
   }
 }

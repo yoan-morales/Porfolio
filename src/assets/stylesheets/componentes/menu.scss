@@ -1,36 +1,87 @@
 .portfolio {
   &Nav {
-    @include size(100%, auto);
-    background-color: $color-transparent;
-    opacity: 70%;
-    position: absolute;
-    z-index: 1;
+    @include size(400px, 100vh);
+    border-radius: 0 120px 0 0;
+    background-color: rgba(#fff, 0.8);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    padding: 3rem 1rem;
+    &__lateral {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
     &__logo {
+      padding-top: 1rem;
       img {
-        @include size(100%, 100px);
+        @include size(100%, 200px);
         object-fit: contain;
       }
     }
 
     &__menu {
-      @include align(flex, center, center);
+      @include align(flex, flex-start, center);
+      width: 100%;
+      flex-direction: column;
+      margin-top: 6rem;
       ul {
+        display: flex;
+        flex-direction: column !important;
         li {
-          margin: 0 18px;
+          margin: 0.4rem 0 0;
+
           .nav-link {
-            @include font($font-family, $color-text, 18px, 700);
+            @include font($font-family, $color-text, 22px, 300);
+            position: relative;
+            &:after {
+              content: "";
+              background-color: #da6671;
+              width: 0;
+              height: 3px;
+              display: block;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transition: width 0.5s ease-in-out;
+            }
+            &.active,
+            &:hover {
+              &:after {
+                width: 100%;
+              }
+            }
+            position: relative;
           }
         }
       }
     }
 
     &__contact {
-      button {
-        background-color: $secondary-color;
-        color: white;
-        padding: 8px 18px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .btn {
+        transition: all 0.3s ease-in-out;
+        font-family: $font-family;
+        width: 80%;
+        height: 60px;
+        margin-top: 2rem;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, #6f3fb3 0%, #da6671 100%);
+        box-shadow: 0 20px 30px -6px rgba(#da6671, 0.5);
+        outline: none;
+        cursor: pointer;
         border: none;
-        border-radius: 10px;
+        font-size: 24px;
+        color: white;
+        &:hover {
+          transform: translateY(3px);
+          box-shadow: none;
+        }
+        &:active {
+          opacity: 0.5;
+        }
       }
     }
   }

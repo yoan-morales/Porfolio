@@ -1,38 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 .portfolioNav {
-  width: 100%;
-  height: auto;
-  background-color: rbga(236, 240, 241, 1);
-  opacity: 70%;
-  position: absolute;
-  z-index: 1;
+  width: 400px;
+  height: 100vh;
+  border-radius: 0 120px 0 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  padding: 3rem 1rem;
+}
+.portfolioNav__lateral {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.portfolioNav__logo {
+  padding-top: 1rem;
 }
 .portfolioNav__logo img {
   width: 100%;
-  height: 100px;
+  height: 200px;
   object-fit: contain;
 }
 .portfolioNav__menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+.portfolioNav__menu ul {
+  display: flex;
+  flex-direction: column !important;
 }
 .portfolioNav__menu ul li {
-  margin: 0 18px;
+  margin: 0.4rem 0 0;
 }
 .portfolioNav__menu ul li .nav-link {
   font-family: "Arimo", sans-serif;
   color: #040434;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 300;
+  position: relative;
+  position: relative;
 }
-.portfolioNav__contact button {
-  background-color: #2F6EF4;
-  color: white;
-  padding: 8px 18px;
+.portfolioNav__menu ul li .nav-link:after {
+  content: "";
+  background-color: #da6671;
+  width: 0;
+  height: 3px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+.portfolioNav__menu ul li .nav-link.active:after, .portfolioNav__menu ul li .nav-link:hover:after {
+  width: 100%;
+}
+.portfolioNav__contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.portfolioNav__contact .btn {
+  transition: all 0.3s ease-in-out;
+  font-family: "Arimo", sans-serif;
+  width: 80%;
+  height: 60px;
+  margin-top: 2rem;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #6f3fb3 0%, #da6671 100%);
+  box-shadow: 0 20px 30px -6px rgba(218, 102, 113, 0.5);
+  outline: none;
+  cursor: pointer;
   border: none;
-  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+}
+.portfolioNav__contact .btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.portfolioNav__contact .btn:active {
+  opacity: 0.5;
 }
 
 .portfolioContainer {

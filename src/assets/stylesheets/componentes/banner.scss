@@ -7,12 +7,36 @@
     position: relative;
     &__info {
       @include align(flex, center, center);
+      color: #fff;
+      font-family: $font-family-secondary;
       flex-direction: column;
       width: 60%;
       margin: auto;
       position: relative;
       padding-top: 350px;
       z-index: 2;
+      .btn-banner {
+        transition: all 0.3s ease-in-out;
+        font-family: $font-family;
+        width: 25%;
+        height: 60px;
+        margin-top: 2rem;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, #3d5690 0%, #909192 100%);
+        box-shadow: 0 20px 30px -6px rgba(#fff, 0.5);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 24px;
+        color: white;
+        &:hover {
+          transform: translateY(3px);
+          box-shadow: none;
+        }
+        &:active {
+          opacity: 0.5;
+        }
+      }
     }
     video {
       position: absolute;

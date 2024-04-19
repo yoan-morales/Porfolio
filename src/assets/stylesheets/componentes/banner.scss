@@ -16,6 +16,10 @@
       margin: 18px;
       position: relative;
       z-index: 2;
+      h3 {
+        font-size: 1.5rem;
+      }
+
       .btn-banner {
         transition: all 0.3s ease-in-out;
         font-family: $font-family;

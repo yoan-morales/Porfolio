@@ -1,6 +1,6 @@
 .portfolio {
   &Nav {
-    @include size(400px, 100vh);
+    @include size(350px, 100vh);
     border-radius: 0 120px 0 0;
     background-color: rgba(#fff, 0.8);
     position: fixed;

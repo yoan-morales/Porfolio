@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 .portfolioNav {
-  width: 400px;
+  width: 350px;
   height: 100vh;
   border-radius: 0 120px 0 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -110,6 +110,9 @@
   margin: 18px;
   position: relative;
   z-index: 2;
+}
+.portfolioBanner__info h3 {
+  font-size: 1.5rem;
 }
 .portfolioBanner__info .btn-banner {
   transition: all 0.3s ease-in-out;

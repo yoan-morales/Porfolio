@@ -3,26 +3,27 @@
   padding: 0;
   box-sizing: 0;
   &Banner {
+    display: flex;
     min-height: 100vh;
+    margin: 0;
     position: relative;
     &__info {
-      @include align(flex, center, center);
+      @include align(flex, center, flex-end);
       color: #fff;
       font-family: $font-family-secondary;
       flex-direction: column;
-      width: 60%;
-      margin: auto;
+      width: 100%;
+      margin: 18px;
       position: relative;
-      padding-top: 350px;
       z-index: 2;
       .btn-banner {
         transition: all 0.3s ease-in-out;
         font-family: $font-family;
-        width: 25%;
+        width: 16%;
         height: 60px;
         margin-top: 2rem;
         border-radius: 50px;
-        background-image: linear-gradient(135deg, #90c7ff 0%, #f3ba6f 100%);
+        background-image: linear-gradient(135deg, #7abeff 0%, #1c62ff 100%);
         box-shadow: 0 20px 30px -6px rgba(#fff, 0.5);
         outline: none;
         cursor: pointer;

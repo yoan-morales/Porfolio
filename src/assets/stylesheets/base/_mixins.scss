@@ -38,8 +38,8 @@
   display: $display;
 }
 
-@mixin align($display, $jusify-content, $align-items) {
+@mixin align($display, $justify-content, $align-items) {
   display: $display;
-  justify-content: $jusify-content;
+  justify-content: $justify-content;
   align-items: $align-items;
 }

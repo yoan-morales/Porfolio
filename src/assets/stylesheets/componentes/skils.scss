@@ -1,0 +1,45 @@
+.profesionalSkils {
+  background: linear-gradient(135deg, #6f3fb3 0%, #da6671 100%);
+  padding: 4rem 0;
+  .list-skils {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .items-skils {
+      @include size(414px, 160px);
+      margin: 1rem 1rem 0 1rem;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 3.5rem;
+      }
+      .fa-brands {
+        &.fa-html5 {
+          color: #dd4b25;
+        }
+        &.fa-css3-alt {
+          color: #016cb8;
+        }
+        &.fa-sass {
+          color: #c76494;
+        }
+
+        &.fa-js {
+          color: #efd81d;
+        }
+        &.fa-square-git {
+          color: #e84e31;
+        }
+        &.fa-jira {
+          color: #2580f7;
+        }
+      }
+    }
+  }
+}

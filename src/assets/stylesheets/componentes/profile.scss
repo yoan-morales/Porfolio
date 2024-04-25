@@ -1,0 +1,16 @@
+.container-fluid {
+  .profile-profesional {
+    display: flex;
+    padding: 1.8rem 0;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    img {
+      @include size(300px, 300px);
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}

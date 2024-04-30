@@ -21,10 +21,10 @@
       }
 
       .btn-banner {
+        @include size(16%, 60px);
         transition: all 0.3s ease-in-out;
         font-family: $font-family;
-        width: 16%;
-        height: 60px;
+
         margin-top: 2rem;
         border-radius: 50px;
         background-image: linear-gradient(135deg, #7abeff 0%, #1c62ff 100%);

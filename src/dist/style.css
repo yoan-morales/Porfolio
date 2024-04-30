@@ -115,10 +115,10 @@
   font-size: 1.5rem;
 }
 .portfolioBanner__info .btn-banner {
-  transition: all 0.3s ease-in-out;
-  font-family: "Arimo", sans-serif;
   width: 16%;
   height: 60px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Arimo", sans-serif;
   margin-top: 2rem;
   border-radius: 50px;
   background-image: linear-gradient(135deg, #7abeff 0%, #1c62ff 100%);
@@ -203,6 +203,67 @@
   margin-bottom: 0;
   font-family: "Arimo", sans-serif;
   text-align: center;
+}
+
+.formation .card-container {
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.formation .card-container .card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.formation .card-container .card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.formation .card-container .card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.formation .card-container .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.formation .card-container .card:hover .front-content {
+  transform: translateY(-30%);
+}
+.formation .card-container .card:hover .front-content p {
+  opacity: 0;
+}
+.formation .card-container .card:hover .content {
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
